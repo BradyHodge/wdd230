@@ -1,0 +1,97 @@
+/* Colors:
+https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41-000000
+*/
+
+
+#infoCard {
+    text-align: center;
+}
+.card {
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+}
+body {
+    background-color: #DAD7CD;
+    margin: 0;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #000000;
+
+}
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #DAD7CD;
+    font-size: 1.5em;
+    margin: 0;
+    background-color: #344E41;
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+header {
+    background-color: #DAD7CD;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    margin: 1rem;
+    padding: 0;
+    max-width: 6rem;
+}
+header h1 {
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    padding: 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #DAD7CD;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+nav ul li:hover {
+    background-color: #3A5A40;
+    
+}
+nav {
+    background-color: #344E41;
+    text-align: center;
+    width: 100%;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: #344E41;
+    color: #DAD7CD;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
