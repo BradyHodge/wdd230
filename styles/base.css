@@ -67,8 +67,8 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-.open a {
-	display: block;
+ul li a {
+    display: block;
 }
 #menu::before {
 	content: "☰";

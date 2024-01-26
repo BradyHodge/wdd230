@@ -2,11 +2,18 @@
     #menu {
         display: none;
     }
+    ul li, ul li a {
+        display: inline;
+    }
     nav ul {
+        padding: 1rem;
+    }
+    .navigation {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
     }
+    
     main {
         grid-template-columns: 2fr 1fr;
     }
