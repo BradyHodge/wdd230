@@ -2,7 +2,7 @@
     #menu {
         display: none;
     }
-    ul li, ul li a {
+    nav ul li, nav ul li a {
         display: inline;
     }
     nav ul {
