@@ -56,11 +56,25 @@ header h1 {
 ul {
     list-style-type: none;
 }
-nav ul {
+.navigation {
+    display: none;
+}
+.active {
     display: flex;
     flex-direction: column;
+}
+nav ul {
     padding: 0;
     margin: 0;
+}
+.open a {
+	display: block;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "❌";
 }
 nav ul li {
     padding: 1rem;
