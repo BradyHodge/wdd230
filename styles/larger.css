@@ -4,9 +4,14 @@
         width: 100%;
     }
     nav ul {
-        justify-content: center;
-        flex-direction: row;
+        padding: 1rem;
     }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
     main {
         grid-template-columns: 2fr 1fr;
     }
