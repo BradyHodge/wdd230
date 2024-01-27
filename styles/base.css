@@ -6,6 +6,10 @@ https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41-000000
 #infoCard {
     text-align: center;
 }
+#map {
+    grid-column: 1/2;
+    width: 100%;
+}
 .card {
     border-radius: 0.5rem;
     border: 1px solid #000000;
