@@ -3,6 +3,9 @@
         grid-column: 1/3;
         width: 100%;
     }
+    nav ul li, nav ul li a {
+        display: inline;
+    }
     nav ul {
         padding: 1rem;
     }
