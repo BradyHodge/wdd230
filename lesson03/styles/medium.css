@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #name {
+        grid-column: 1/2;
+    }
+    #purpose {
+        grid-column: 2/3;
+    }
+    #scenarios {
+        grid-column: 1/2;
+    }
+    #colors {
+        grid-column: 1/3;
+    }
+    #typography {
+        grid-column: 2/3;
+    }
+    #wireframe {
+        grid-column: 1/3;
+    }
+    #image-box {
+        display: flex;
+        flex-direction: row;
+    }
+    .wireframe-img {
+        padding: 1rem;
+    }
+    
+}

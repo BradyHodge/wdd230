@@ -1,0 +1,33 @@
+@media screen and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        max-width: 100rem;
+        margin: 0 auto;
+    } 
+    #name {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #purpose {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #scenarios {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #colors {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    #typography {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #wireframe {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+}
