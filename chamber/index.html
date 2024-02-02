@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An example website for a theoretical chamber of Commerce for Pocatello, Idaho, made for the WDD 230 class at BYU-Idaho.">
+        <meta name="author" content="Brady Hodge">
+        <title>Pocatello Chamber of Commerce</title>
+        <meta property="og:title" content="Pocatello Chamber of Commerce" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bradyhodge.github.io/wdd230/chamber/" /> <!-- I think that this should be commerce.pocatello.gov -->
+        <meta property="og:image" content="https://raw.githubusercontent.com/BradyHodge/wdd230/main/images/1-4051342028.jpg" />
+        <meta property="og:description" content="An example website for a theoretical chamber of Commerce for Pocatello, Idaho, made for the WDD 230 class at BYU-Idaho." />
+        <meta property="og:site_name" content="Pocatello Chamber of Commerce" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>Pocatello Chamber of Commerce</h1>
+        </header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="hero">
+                <h2>Welcome to Pocatello</h2>
+                <p>Find out what Pocatello has to offer.</p>
+            </div>
+            <div id="call-to-action">
+                <h2>Join the Chamber</h2>
+                <p>Join the Pocatello Chamber of Commerce and help make Pocatello a better place to live and work.</p>
+                <button>Join Now</button>
+            </div>
+            <div id="current-events">
+                <h2>Current Events</h2>
+                <p>Find out what's happening in Pocatello.</p>
+            </div>
+            <div id="wether">
+                <h2>Weather</h2>
+                <p>Find out what the weather is like in Pocatello.</p>
+            </div>
+            <div id="spotlights">
+                <h2>Business Directory</h2>
+                <p>Find a business in Pocatello.</p>
+            </div>
+        </main>
+        <div ID="quck-links">
+
+        </div>
+        <footer>
+            <p>&copy; <span id="copyYear"></span><br><br>Brady Hodge<br><br>Project for WDD 230</p>
+        <p id="lastModified"></p>
+        </footer>
+        <script src="./scripts/getDate.js"></script>
+        <script src="./scripts/hamburger.js"></script>
+    </body>
+</html>
