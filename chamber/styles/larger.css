@@ -1,3 +1,29 @@
 @media screen and (min-width: 1024px) {
-    
+    main {
+        grid-template-columns: auto 20%;
+        grid-template-rows: auto auto auto auto;
+    }
+    #hero {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    #call-to-action {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #current-events {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #wether {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #spotlights {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }

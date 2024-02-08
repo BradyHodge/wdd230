@@ -1,6 +1,6 @@
 #hero {
     background: url('../images/jake-green.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: auto 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,9 +19,55 @@
 #menu {
     padding: 10px 20px;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#join-now {
+    background-color: #26534C;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+#join-now:hover {
+    background: #91B3A6;
 }
 .active {
     display: flex;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#hero p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    width: 100vw; /* Percent was not working for some reason */
+}
+nav ul li a {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 header {
     background: #26534C;
@@ -39,10 +85,6 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 10px;
 }
 nav ul li a {
     /* color: #fff; */

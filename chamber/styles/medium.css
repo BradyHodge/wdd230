@@ -1,3 +1,59 @@
 @media screen and (min-width: 768px) {
-    
+    #menu {
+        display: none;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav {
+        display: block;
+    }
+    nav ul li {
+        width: auto;
+        margin: 0 1rem;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    #hero {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #call-to-action {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #current-events {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    #wether {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #spotlights {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li a {
+    background-color: #8C6E46;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    }
+    nav ul li a:hover { 
+        background-color: #AF9567;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
 }
