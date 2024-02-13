@@ -35,6 +35,10 @@
 #join-now:hover {
     background: #91B3A6;
 }
+#wether-icon img {
+    width: 10%;
+    float: left;
+}
 .active {
     display: flex;
 }
