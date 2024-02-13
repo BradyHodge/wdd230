@@ -16,12 +16,22 @@
 #menu.open::before {
 	content: "❌";
 }
-#menu {
-    padding: 10px 20px;
+#dark-mode-button, #menu {
+    position: absolute; 
+    right: 0;
+}
+#dark-mode-button {
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    
+}
+.dark-mode-link {
+    color: #eff6ff;;
+}
+#menu {
+    padding: 10px 15px;
+    cursor: pointer;
+    top: 50px;
 }
 #join-now {
     background-color: #26534C;
@@ -42,6 +52,11 @@
 .active {
     display: flex;
 }
+.dark-mode {
+    background: #25262b;
+    color: #fff;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: bolder;
@@ -77,7 +92,11 @@ header {
     background: #26534C;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center; 
 }
 header h1 {
     margin: 0;

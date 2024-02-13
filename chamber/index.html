@@ -20,12 +20,22 @@
         <link rel="stylesheet" href="./styles/medium.css">
         <link rel="stylesheet" href="./styles/larger.css">
         <link rel="icon" href="./favicon.ico">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     </head>
     <body>
         <header>
             <h1>Pocatello Chamber of Commerce</h1>
+            <button id="dark-mode-button">
+                <lord-icon
+                    src="https://cdn.lordicon.com/dkowjmhq.json"
+                    trigger="click"
+                    delay="2000"
+                    colors="primary:#8C6E46,secondary:#26534C,tertiary:#000000"
+                    id="dark-mode-icon">
+                </lord-icon>
+            </button>
+            <button id="menu"></button>
         </header>
-        <button id="menu"></button>
         <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -90,5 +100,6 @@
         </footer>
         <script src="./scripts/getDate.js"></script>
         <script src="./scripts/hamburger.js"></script>
+        <script src="./scripts/darkMode.js"></script>
     </body>
 </html>
