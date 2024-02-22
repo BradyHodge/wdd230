@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="./styles/lazyload.css">
+    <script defer src="./scripts/lazyload.js"></script>
+    <script defer src="../scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Load</h1>
+    </header>
+    <main>
+        <img src="https://loremflickr.com/1080/1920/" loading="lazy" width="1080" height="1920" alt="A random image of a cat">
+        <img src="https://loremflickr.com/1080/1920/dog" loading="lazy" width="1080" height="1920" alt="A random image of dog">
+        <img src="https://loremflickr.com/1080/1920/paris" loading="lazy" width="1080" height="1920" alt="A random image of Paris">
+        <img src="https://loremflickr.com/1080/1920/brazil" loading="lazy" width="1080" height="1920" alt="A random image of Brazil">
+        <img src="https://loremflickr.com/1080/1920/rio" loading="lazy" width="1080" height="1920" alt="A random image of Rio">
+        <img src="https://loremflickr.com/1080/1920/art" loading="lazy" width="1080" height="1920" alt="A random image of art">
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="copyYear"></span>Brady Hodge</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
