@@ -60,4 +60,10 @@
         background: none;
         border: none;
     }
+    #hero h2 {
+        font-size: 3rem;
+    }
+    #hero p {
+        font-size: 2rem;
+    }
 }
