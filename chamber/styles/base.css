@@ -2,6 +2,9 @@
     background-color: #eff6ff;
     padding: 1rem;
 }
+.dark-mode-input {
+    color: black;
+}
 
 
 #hero {

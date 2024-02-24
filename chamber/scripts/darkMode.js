@@ -16,6 +16,10 @@ function darkMode() {
     links.forEach(element => {
         element.classList.toggle('dark-mode-link');
     });
+    document.querySelectorAll('nav ul li a').forEach(function(element) {
+      element.classList.toggle('dark-mode-nav');
+  });
+  document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
     toggleLogoColorScheme();
 }
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -26,6 +30,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         links.forEach(element => {
             element.classList.add('dark-mode-link');
         });
+        document.querySelectorAll('nav ul li a').forEach(function(element) {
+          element.classList.toggle('dark-mode-nav');
+      });
+      document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
         toggleLogoColorScheme();
     }
 });

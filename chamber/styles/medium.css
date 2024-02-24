@@ -49,6 +49,12 @@
     margin: 20px 0;
     text-decoration: none;
     }
+    .dark-mode-nav {
+        background-color: #26534C;
+    }
+    .dark-mode-nav:hover {
+        background-color: #91B3A6;
+    }
     nav ul li a:hover { 
         background-color: #AF9567;
     }
