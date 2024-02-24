@@ -6,6 +6,9 @@ main {
 	max-width: 670px;
 	margin: 0 auto;
 }
+#map {
+    border: 0;
+}
 
 .hero {
 	margin: 10px auto;
