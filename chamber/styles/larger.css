@@ -7,15 +7,15 @@
         grid-column: 1/2;
         grid-row: 1/4;
     }
-    #call-to-action {
+    #days-since-visit, #call-to-action {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    #current-events {
+    #news, #current-events {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    #wether {
+    #chamber-history, #wether {
         grid-column: 2/3;
         grid-row: 3/4;
     }
