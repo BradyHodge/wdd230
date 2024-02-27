@@ -18,19 +18,19 @@
         grid-gap: 20px;
         padding: 20px;
     }
-    #hero {
+    .gallery, #hero {
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    #call-to-action {
+    #days-since-visit, #call-to-action {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    #current-events {
+    #news, #current-events {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-    #wether {
+    #chamber-history, #wether {
         grid-column: 2/3;
         grid-row: 2/3;
     }
@@ -71,5 +71,12 @@
     }
     #hero p {
         font-size: 2rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .photo img:hover {
+        opacity:  0.8;
+        transition: opacity  0.3s ease-in-out;
     }
 }
