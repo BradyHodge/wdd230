@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #344E41;
+    --secondary-color: #3A5A40;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #DAD7CD;
+    --white-color: #ffffff;
+    --dark-color: #343a40;
+    --black-color: #000000;
+}
+
+#error-message {
+    color: var(--danger-color);
+}
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(var(--light-color), var(--dark-color));
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem var(--white-color);
+	opacity: 0.75;
+}
+body {
+    background-color: var(--light-color);
+    margin: 0;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid var(--black-color);
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+nav ul li:hover {
+    background-color: var(--secondary-color);
+    
+}
+nav {
+    background-color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+}
+footer {
+    background-color: var(--primary-color);
+    color: #DAD7CD;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}

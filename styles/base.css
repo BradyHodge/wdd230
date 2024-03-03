@@ -2,6 +2,17 @@
 https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41-000000
 */
 
+:root {
+    --primary-color: #344E41;
+    --secondary-color: #3A5A40;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #DAD7CD;
+    --white-color: #ffffff;
+    --dark-color: #343a40;
+    --black-color: #000000;
+}
+
 main {
 	max-width: 670px;
 	margin: 0 auto;
@@ -28,12 +39,11 @@ main {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
+	background: radial-gradient(var(--light-color), var(--dark-color));
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
+	box-shadow: 0 0 3rem var(--white-color);
 	opacity: 0.75;
-	/* Buenas */
 }
 
 .herolabel p {
@@ -54,10 +64,10 @@ main {
 }
 .card {
     border-radius: 0.5rem;
-    border: 1px solid #000000;
+    border: 1px solid var(--black-color);
 }
 body {
-    background-color: #DAD7CD;
+    background-color: var(--light-color);
     margin: 0;
 }
 h2 {
@@ -66,22 +76,22 @@ h2 {
     font-size: 2em;
     margin: 0;
     padding: 1rem;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--black-color);
 
 }
 h3 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    color: #DAD7CD;
+    color: var(--light-color);
     font-size: 1.5em;
     margin: 0;
-    background-color: #344E41;
+    background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 header {
-    background-color: #DAD7CD;
-    color: #000000;
+    background-color: var(--light-color);
+    color: var(--black-color);
     text-align: center;
     width: 100%;
     display: flex;
@@ -133,16 +143,16 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #DAD7CD;
+    color: var(--light-color);
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
 }
 nav ul li:hover {
-    background-color: #3A5A40;
+    background-color: var(--secondary-color);
     
 }
 nav {
-    background-color: #344E41;
+    background-color: var(--primary-color);
     text-align: center;
     width: 100%;
 }
@@ -155,7 +165,7 @@ main {
     margin-bottom: 1rem;
 }
 footer {
-    background-color: #344E41;
+    background-color: var(--primary-color);
     color: #DAD7CD;
     text-align: center;
     padding: 1rem;

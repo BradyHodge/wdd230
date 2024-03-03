@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A course assignment portal made for the WDD 230 - Web Frontend Development class by the student Brady Hodge.">
+        <meta name="author" content="Brady Hodge">
+        <meta property="og:title" content="Brady Hodge - WDD 230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://raw.githubusercontent.com/BradyHodge/wdd230/main/images/1-4051342028.jpg">
+        <meta property="og:url" content="https://bradyhodge.github.io/wdd230/">
+        <title>Brady Hodge - WDD 230 - Web Frontend Development</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="./styles/form.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+    </head>    
+<body>
+    <header>
+        <img src="./images/profile.webp" alt="A profile photo of Brady Hodge">
+        <h1>Brady Hodge</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank" >BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/4?lang=eng&id=p1#p1" target="_blank">Scripture</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Create Account</h2>
+        <form action="record.html" id="registrationForm" method="get">
+            <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required title="Please pick a user name"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required title="Password must be at least 8 characters long and contain only alphanumeric characters"><br><br>
+        
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required title="Password must match the Password entered above"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address"><br><br>
+            <label for="pageRating">Page Rating:</label><br>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="ratingOutput.value = pageRating.value">
+            <output id="ratingOutput">5</output><br><br>
+            <input type="submit" value="Create Account">
+            <div id="error-message"></div>
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="copyYear"></span><br><br>Brady Hodge<br><br>Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/visitcounter.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
