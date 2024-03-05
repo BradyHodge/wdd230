@@ -2,11 +2,6 @@
     background-color: #eff6ff;
     padding: 1rem;
 }
-.dark-mode-input {
-    color: black;
-}
-
-
 #hero {
     position: relative;
     height: 100vh;
@@ -42,13 +37,6 @@
     top: 0;
     z-index: -1;
 }
-.hero-text {
-    position: relative;
-    z-index: 2;
-}
-.dark-mode-link {
-    color: #eff6ff;;
-}
 #menu {
     padding: 10px 15px;
     cursor: pointer;
@@ -69,18 +57,6 @@
 #weather-icon img {
     width: 10%;
     float: left;
-}
-.active {
-    display: flex;
-}
-.dark-mode {
-    background: #25262b;
-    color: #fff;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bolder;
 }
 #hero h2 {
     font-size: 2rem;
@@ -106,11 +82,75 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
 }
-main {
+#main-page {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
+}
+#thank-you {
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+#join {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#join-form {
+    margin: auto;
+}
+#join-form input {
+    border: none;
+    border-bottom: #25262b solid 1px;
+}
+#form-submit {
+    border-radius: 5px;
+    font-size: large;
+}
+#membership-info {
+    max-width: 600px
+}
+.dark-mode-input {
+    color: black;
+}
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+.dark-mode-link {
+    color: #eff6ff;;
+}
+.active {
+    display: flex;
+}
+.dark-mode {
+    background: #25262b;
+    color: #fff;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+.photo {
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.disclaimer {
+    font-size: 0.8rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
 }
 nav ul {
     display: flex;
@@ -172,19 +212,4 @@ footer a:hover {
 }
 footer p {
     margin: 0;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 16px;
-}
-.photo {
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-.photo img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
 }

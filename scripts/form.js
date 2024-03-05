@@ -11,4 +11,4 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     } else {
         errorMessageDiv.textContent = '';
     }
-});
+}); 

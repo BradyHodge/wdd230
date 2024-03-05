@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) {
-    main {
+    #main-page {
         grid-template-columns: auto 20%;
         grid-template-rows: auto auto auto auto;
     }
@@ -33,5 +33,24 @@
     }
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    #join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+    #join-form {
+        margin: 0;
+        margin-left: auto;
+        grid-column: 1/2;
+        text-align: left;
+        padding-right: 2rem;
+        border-right: #25262b solid 1px;
+    }
+    #membership-info {
+        grid-column: 2/3;
+        padding-left: 2rem;
+        border-left: #25262b solid 1px;
+        margin-right: auto;
     }
 }

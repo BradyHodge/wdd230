@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An example website for a theoretical chamber of Commerce for Pocatello, Idaho, made for the WDD 230 class at BYU-Idaho.">
+        <meta name="author" content="Brady Hodge">
+        <title>Join the Chamber of Commerce</title>
+        <meta property="og:title" content="Pocatello Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bradyhodge.github.io/wdd230/chamber/">
+        <meta property="og:image" content="https://raw.githubusercontent.com/BradyHodge/wdd230/main/images/1-4051342028.jpg">
+        <meta property="og:description" content="An example website for a theoretical chamber of Commerce for Pocatello, Idaho, made for the WDD 230 class at BYU-Idaho.">
+        <meta property="og:site_name" content="Pocatello Chamber of Commerce">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link rel="icon" href="./favicon.ico">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Pocatello Chamber of Commerce</h1>
+            <button id="dark-mode-button">
+                <lord-icon
+                    src="https://cdn.lordicon.com/dkowjmhq.json"
+                    trigger="click"
+                    delay="2000"
+                    colors="primary:#8C6E46,secondary:#26534C,tertiary:#000000"
+                    id="dark-mode-icon">
+                </lord-icon>
+            </button>
+            <button id="menu"></button>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="join">
+            <form action="thankyou.html" method="get" id="join-form">
+                <input type="hidden" id="time-loaded">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                <label for="position">Position:</label><br>
+                <input type="text" id="position" name="position" required pattern="[A-Za-z\- ]{7,}"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+" title="A valid email address" placeholder="example@gmail.com"><br><br>
+                <label for="phonenumber">Phone Number:</label><br>
+                <input type="text" id="phonenumber" name="phonenumber" required><br><br>
+                <label for="business">Business/Organization:</label><br>
+                <input type="text" id="business" name="business" required><br><br>
+                <p>Please select any that apply to you:</p>
+                <label for="membership-level1"> NP Membership is for non profits (No Fee).</label><br>
+                <input type="radio" id="membership-level1" name="membership-level" ><br><br>
+                <label for="membership-level2"> Bronze Membership</label><br>
+                <input type="radio" id="membership-level2" name="membership-level" ><br><br>
+                <label for="membership-level3">Silver Membership</label><br>
+                <input type="radio" id="membership-level3" name="membership-level" ><br><br>
+                <label for="membership-level4"> Gold Membership</label><br>
+                <input type="radio" id="membership-level4" name="membership-level" ><br><br>
+                <label for="business-description">Please provide a description of your business:</label><br>
+                <input type="text" id="business-description" name="business-description" ><br><br>
+                <input type="submit" value="Join Now!" id="form-submit">
+            </form>
+            <div id="membership-info">
+                <h2>Memberships</h2>
+                <h3>NP Membership</h3>
+                <p>Recognizing the valuable role non-profit organizations play in our community, the Chamber offers a free membership tier for non-profits. This membership will allow you to connect with like-minded organizations, gain exposure for your cause, and potentially partner with Chamber members to further your mission.</p>
+
+                <h3>Bronze Membership</h3>
+                <p>The Bronze Membership package is ideal for businesses seeking a solid foundation in the community. Bronze members will enjoy benefits such as Listing in the Chamber directory, Access to member-only discounts, and Networking events.
+                </p>
+
+                <h3>Silver Membership</h3>
+                <p>The Silver Membership package builds upon the benefits of Bronze membership and offers additional advantages to help you grow your business. Silver members will enjoy everything from the Bronze Membership benefits as well as featured listing in the Chamber directory and promotion through Chamber social media channels</p>
+
+                <h3>Gold Membership</h3>
+                <p>The Gold Membership package is designed for businesses seeking maximum exposure and engagement within the Chamber community. Gold members will receive all the benefits of Silver membership, plus priority listing in the Chamber directory, sponsorship opportunities at Chamber events and exclusive access to business development resources
+                </p>
+
+                <p class="disclaimer">(Placeholder membership info was generated by Mistral's 8x7B large language model)</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyYear"></span> Brady Hodge <br><br>Project for WDD 230</p><br><a href="mailto:contact@bradyhodge.com">Email Me</a><br><br>
+            (None of the content on this website is accurate and is for demo purposes only)<br><br>
+        <p id="lastModified"></p>
+        </footer>
+        
+        <script src="./scripts/hamburger.js"></script>
+        <script src="./scripts/darkMode.js"></script>
+        <script src="./scripts/joinForm.js"></script>
+    </body>
+</html>
