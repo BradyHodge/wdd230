@@ -148,6 +148,9 @@
 .disclaimer {
     font-size: 0.8rem;
 }
+fieldset {
+    border: none;
+}
 h2 {
     font-size: 2rem;
     font-weight: bolder;
