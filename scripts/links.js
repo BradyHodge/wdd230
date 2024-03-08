@@ -16,7 +16,7 @@ function displayLinks(weeks) {
             const linkAnchor = document.createElement('a');
             linkAnchor.textContent = link.title;
             linkAnchor.href = baseURL + link.url;
-            linkAnchor.target = '_blank'; // Open in a new tab
+            linkAnchor.target = '_blank';
             linkItem.appendChild(linkAnchor);
             linksList.appendChild(linkItem);
         });
