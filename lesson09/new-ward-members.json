@@ -1,0 +1,66 @@
+{
+    "wardInformation": [
+      {
+        "familyName": "Johnson",
+        "moveInDate": "2023-02-10",
+        "numberOfPeople": 5,
+        "visitedByBishopric": true,
+        "familyMembers": [
+          {
+            "name": "William Johnson",
+            "gender": "Male",
+            "birthdate": "1980-10-25"
+          },
+          {
+            "name": "Elizabeth Johnson",
+            "gender": "Female",
+            "birthdate": "1983-07-12"
+          },
+          {
+            "name": "Charles Johnson",
+            "gender": "Male",
+            "birthdate": "2012-05-19"
+          },
+          {
+            "name": "Sarah Johnson",
+            "gender": "Female",
+            "birthdate": "2015-03-08"
+          },
+          {
+            "name": "Benjamin Johnson",
+            "gender": "Male",
+            "birthdate": "2018-11-14"
+          }
+        ]
+      },
+      {
+        "familyName": "Garcia",
+        "moveInDate": "2024-01-15",
+        "numberOfPeople": 4,
+        "visitedByBishopric": false,
+        "familyMembers": [
+          {
+            "name": "Isabella Garcia",
+            "gender": "Female",
+            "birthdate": "1990-04-01"
+          },
+          {
+            "name": "Daniel Garcia",
+            "gender": "Male",
+            "birthdate": "1987-08-29"
+          },
+          {
+            "name": "Mateo Garcia",
+            "gender": "Male",
+            "birthdate": "2015-12-25"
+          },
+          {
+            "name": "Valentina Garcia",
+            "gender": "Female",
+            "birthdate": "2020-02-02"
+          }
+        ]
+      }
+    ]
+  }
+  
