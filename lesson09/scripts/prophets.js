@@ -5,8 +5,7 @@ async function getProphetData() {
     const prophetsData = await response.json();
     displayProphets(prophetsData.prophets);
 }
-
-function displayProphets(prophetsData) {
+const displayProphets = (prophetsData) => {
     prophetsData.forEach((prophet) => {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');

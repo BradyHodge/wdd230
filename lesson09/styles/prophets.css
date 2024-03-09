@@ -1,0 +1,38 @@
+#cards { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
+    grid-gap:10px;
+}
+h1 {
+    color: #4d4d96;
+    text-align: center;
+}
+section {
+    border: solid #000000 1px;
+    background-color:#b9b9cc;
+    padding: 20px;
+}
+h2{
+    color: #4d4d96;
+    text-align: center;
+}
+
+h3{
+    color: #585861;
+    text-align: center;
+}
+
+p{
+    color: #585861;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #ffffff 1px;
+    box-shadow: 5px 5px 5px  #000000;
+}
