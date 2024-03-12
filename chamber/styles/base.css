@@ -113,6 +113,60 @@
 #membership-info {
     max-width: 600px
 }
+#grid-button, #list-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer; 
+}
+#directory-buttons {
+    margin: 1rem;
+    text-align: center;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-grid .card {
+    flex: 0 0 100%;
+    margin-bottom: 20px; 
+}
+.cards-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-list .card img {
+    display: none;
+}
 .dark-mode-input {
     color: black;
 }
@@ -147,6 +201,7 @@
 }
 .disclaimer {
     font-size: 0.8rem;
+    text-align: center;
 }
 fieldset {
     border: none;
