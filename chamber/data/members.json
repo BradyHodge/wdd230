@@ -1,59 +1,59 @@
 {
-"companies": [  
+   "companies": [  
       {
          "name": "Acme Inc.",
-         "address": "123 Main St, Salt Lake City, UT 84101",
+         "address": "123 Main St, Pocatello, Idaho 83201",
          "phone": "(801) 555-1212",
-         "website": "[invalid URL removed]",
-         "image": "company_logo_acme.jpg",
+         "website": "acmeinc.com",
+         "image": "./images/acme.webp",
          "membershipLevel": "Gold"
       },
       {
          "name": "Beehive Bakery",
-         "address": "456 Baker Ave, Salt Lake City, UT 84107",
+         "address": "456 Baker Ave, Pocatello, Idaho 83201",
          "phone": "(801) 555-4444",
-         "website": "[invalid URL removed]",
-         "image": "company_logo_beehivebakery.png",
+         "website": "beehivebakery.shop",
+         "image": "./images/beehivebakery.webp",
          "membershipLevel": "Silver"
       },
       {
          "name": "Canyon Creek Software",
-         "address": "789 Tech Way, Draper, UT 84020",
+         "address": "789 Tech Way, Pocatello, Idaho 83201",
          "phone": "(801) 555-7777",
-         "website": "[https://www.canyoncreeksoftware.com](https://www.canyoncreeksoftware.com)",
-         "image": "company_logo_canyoncreeksoftware.gif",
+         "website": "canyoncreeksoftware.com",
+         "image": "./images/canyoncreeksoftware.webp",
          "membershipLevel": "Bronze"
       },
       {
          "name": "Delicious Dishes Catering",
-         "address": "1011 Cater Dr, West Jordan, UT 84088",
+         "address": "1011 Cater Dr, Pocatello, Idaho 83201",
          "phone": "(801) 555-0000",
-         "website": "[invalid URL removed]",
-         "image": "company_logo_deliciousdishescatering.jpg",
+         "website": "deliciousdishescatering.yum",
+         "image": "./images/deliciousdishescatering.webp",
          "membershipLevel": "Gold"
       },
       {
          "name": "Evergreen Bike Shop",
-         "address": "1234 Pedal St, Murray, UT 84107",
+         "address": "1234 Pedal St, Pocatello, Idaho 83201",
          "phone": "(801) 555-2222",
-         "website": "[https://www.evergreenbikeshop.com](https://www.evergreenbikeshop.com)",
-         "image": "company_logo_evergreenbikeshop.png",
+         "website": "evergreenbikeshop.ca",
+         "image": "./images/evergreenbikeshop.webp",
          "membershipLevel": "Silver"
       },
       {
          "name": "Fantastic Fitness",
-         "address": "567 Gym Rd, Taylorsville, UT 84118",
+         "address": "567 Gym Rd, Pocatello, Idaho 83201",
          "phone": "(801) 555-5555",
-         "website": "[invalid URL removed]",
-         "image": "company_logo_fantasticfitness.jpg",
+         "website": "fantasticfitness.com",
+         "image": "./images/fantasticfitness.webp",
          "membershipLevel": "Bronze"
       },
       {
          "name": "Gearhead Gadgets",
-         "address": "890 Tech Mall, Sandy, UT 84070",
+         "address": "890 Tech Mall, Pocatello, Idaho 83201",
          "phone": "(801) 555-3333",
-         "website": "[invalid URL removed]",
-         "image": "company_logo_gearheadgadgets.png",
+         "website": "gearheadgadgets.co",
+         "image": "./images/gearheadgadgets.webp",
          "membershipLevel": "Gold"
       }
    ]
