@@ -1,58 +1,60 @@
-[  
-   {
-      "name": "Acme Inc.",
-      "address": "123 Main St, Salt Lake City, UT 84101",
-      "phone": "(801) 555-1212",
-      "website": "[invalid URL removed]",
-      "image": "company_logo_acme.jpg",
-      "membershipLevel": "Gold"
-   },
-   {
-      "name": "Beehive Bakery",
-      "address": "456 Baker Ave, Salt Lake City, UT 84107",
-      "phone": "(801) 555-4444",
-      "website": "[invalid URL removed]",
-      "image": "company_logo_beehivebakery.png",
-      "membershipLevel": "Silver"
-   },
-   {
-      "name": "Canyon Creek Software",
-      "address": "789 Tech Way, Draper, UT 84020",
-      "phone": "(801) 555-7777",
-      "website": "[https://www.canyoncreeksoftware.com](https://www.canyoncreeksoftware.com)",
-      "image": "company_logo_canyoncreeksoftware.gif",
-      "membershipLevel": "Bronze"
-   },
-   {
-      "name": "Delicious Dishes Catering",
-      "address": "1011 Cater Dr, West Jordan, UT 84088",
-      "phone": "(801) 555-0000",
-      "website": "[invalid URL removed]",
-      "image": "company_logo_deliciousdishescatering.jpg",
-      "membershipLevel": "Gold"
-   },
-   {
-      "name": "Evergreen Bike Shop",
-      "address": "1234 Pedal St, Murray, UT 84107",
-      "phone": "(801) 555-2222",
-      "website": "[https://www.evergreenbikeshop.com](https://www.evergreenbikeshop.com)",
-      "image": "company_logo_evergreenbikeshop.png",
-      "membershipLevel": "Silver"
-   },
-   {
-      "name": "Fantastic Fitness",
-      "address": "567 Gym Rd, Taylorsville, UT 84118",
-      "phone": "(801) 555-5555",
-      "website": "[invalid URL removed]",
-      "image": "company_logo_fantasticfitness.jpg",
-      "membershipLevel": "Bronze"
-   },
-   {
-      "name": "Gearhead Gadgets",
-      "address": "890 Tech Mall, Sandy, UT 84070",
-      "phone": "(801) 555-3333",
-      "website": "[invalid URL removed]",
-      "image": "company_logo_gearheadgadgets.png",
-      "membershipLevel": "Gold"
-   }
-]
+{
+"companies": [  
+      {
+         "name": "Acme Inc.",
+         "address": "123 Main St, Salt Lake City, UT 84101",
+         "phone": "(801) 555-1212",
+         "website": "[invalid URL removed]",
+         "image": "company_logo_acme.jpg",
+         "membershipLevel": "Gold"
+      },
+      {
+         "name": "Beehive Bakery",
+         "address": "456 Baker Ave, Salt Lake City, UT 84107",
+         "phone": "(801) 555-4444",
+         "website": "[invalid URL removed]",
+         "image": "company_logo_beehivebakery.png",
+         "membershipLevel": "Silver"
+      },
+      {
+         "name": "Canyon Creek Software",
+         "address": "789 Tech Way, Draper, UT 84020",
+         "phone": "(801) 555-7777",
+         "website": "[https://www.canyoncreeksoftware.com](https://www.canyoncreeksoftware.com)",
+         "image": "company_logo_canyoncreeksoftware.gif",
+         "membershipLevel": "Bronze"
+      },
+      {
+         "name": "Delicious Dishes Catering",
+         "address": "1011 Cater Dr, West Jordan, UT 84088",
+         "phone": "(801) 555-0000",
+         "website": "[invalid URL removed]",
+         "image": "company_logo_deliciousdishescatering.jpg",
+         "membershipLevel": "Gold"
+      },
+      {
+         "name": "Evergreen Bike Shop",
+         "address": "1234 Pedal St, Murray, UT 84107",
+         "phone": "(801) 555-2222",
+         "website": "[https://www.evergreenbikeshop.com](https://www.evergreenbikeshop.com)",
+         "image": "company_logo_evergreenbikeshop.png",
+         "membershipLevel": "Silver"
+      },
+      {
+         "name": "Fantastic Fitness",
+         "address": "567 Gym Rd, Taylorsville, UT 84118",
+         "phone": "(801) 555-5555",
+         "website": "[invalid URL removed]",
+         "image": "company_logo_fantasticfitness.jpg",
+         "membershipLevel": "Bronze"
+      },
+      {
+         "name": "Gearhead Gadgets",
+         "address": "890 Tech Mall, Sandy, UT 84070",
+         "phone": "(801) 555-3333",
+         "website": "[invalid URL removed]",
+         "image": "company_logo_gearheadgadgets.png",
+         "membershipLevel": "Gold"
+      }
+   ]
+}
