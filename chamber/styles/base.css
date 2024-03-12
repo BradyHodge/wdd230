@@ -203,6 +203,9 @@
     font-size: 0.8rem;
     text-align: center;
 }
+a {
+    color: inherit;
+}
 fieldset {
     border: none;
 }
@@ -249,7 +252,6 @@ nav ul {
     padding: 0;
 }
 nav ul li a {
-    /* color: #fff; */
     text-decoration: none;
 }
 nav ul li a:hover {
@@ -261,10 +263,7 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+
 footer a:hover {
     text-decoration: underline;
 }
