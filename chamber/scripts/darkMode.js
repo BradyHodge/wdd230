@@ -19,8 +19,24 @@ function darkMode() {
     document.querySelectorAll('nav ul li a').forEach(function(element) {
       element.classList.toggle('dark-mode-nav');
   });
-  document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
-    toggleLogoColorScheme();
+  if (window.location.pathname.endsWith('index.html')) {
+    document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
+}
+toggleLogoColorScheme();
+  if (window.location.pathname.endsWith('directory.html')) {
+    const listButton = document.getElementById('list-button-img');
+    if (isDarkMode) {
+        listButton.src = './images/list-white.png';
+    } else {
+        listButton.src = './images/list.png';
+    }
+    const gridButton = document.getElementById('grid-button-img');
+    if (isDarkMode) {
+        gridButton.src = './images/grid-white.png';
+    } else {
+        gridButton.src = './images/grid.png';
+    }
+  }
 }
 document.addEventListener('DOMContentLoaded', (event) => {
     let isDarkMode = localStorage.getItem('dark-mode') === 'true';
@@ -33,8 +49,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('nav ul li a').forEach(function(element) {
           element.classList.toggle('dark-mode-nav');
       });
-      document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
+      if (window.location.pathname.endsWith('index.html')) {
+        document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
+    }
         toggleLogoColorScheme();
+        if (window.location.pathname.endsWith('directory.html')) {
+          const listButton = document.getElementById('list-button-img');
+          if (isDarkMode) {
+              listButton.src = './images/list-white.png';
+          } else {
+              listButton.src = './images/list.png';
+          }
+          const gridButton = document.getElementById('grid-button-img');
+          if (isDarkMode) {
+              gridButton.src = './images/grid-white.png';
+          } else {
+              gridButton.src = './images/grid.png';
+          }
+        }
     }
 });
 
