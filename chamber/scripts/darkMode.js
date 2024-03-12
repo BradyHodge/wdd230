@@ -12,10 +12,6 @@ function toggleLogoColorScheme() {
 function darkMode() {
     let isDarkMode = document.body.classList.toggle("dark-mode");
     localStorage.setItem('dark-mode', isDarkMode);
-    const links = document.querySelectorAll('a');
-    links.forEach(element => {
-        element.classList.toggle('dark-mode-link');
-    });
     document.querySelectorAll('nav ul li a').forEach(function(element) {
       element.classList.toggle('dark-mode-nav');
   });
@@ -42,10 +38,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let isDarkMode = localStorage.getItem('dark-mode') === 'true';
     if(isDarkMode) {
         document.body.classList.add("dark-mode");
-        const links = document.querySelectorAll('a');
-        links.forEach(element => {
-            element.classList.add('dark-mode-link');
-        });
         document.querySelectorAll('nav ul li a').forEach(function(element) {
           element.classList.toggle('dark-mode-nav');
       });
