@@ -29,6 +29,7 @@
     .header-text {
         justify-self: start;
         grid-row: 1/2;
+        border-radius: 0 0 5px 0;
     }
     .gallery, #hero {
         grid-column: 1/3;
