@@ -43,13 +43,6 @@ function displayCompanies(memberData) {
         website.setAttribute('href', '#');
         card.appendChild(membership);
         cards.appendChild(card);
-        console.log("name:", company.name);
-        console.log("address:", company.address);
-        console.log("phone:", company.phone);
-        console.log("website:", company.website);
-        console.log("image:", company.image);
-        console.log("membershipLevel:", company.membershipLevel);
-        console.log("---------------------------");
     });
 }
 getCompanyData();
