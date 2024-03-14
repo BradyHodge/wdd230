@@ -20,8 +20,9 @@
 	content: "❌";
 }
 #dark-mode-button, #menu {
-    position: absolute; 
-    right: 0;
+    justify-self: end;
+    grid-row: 1/2;
+    border: none;
 }
 #dark-mode-button {
     cursor: pointer;
@@ -40,7 +41,7 @@
 #menu {
     padding: 10px 15px;
     cursor: pointer;
-    top: 50px;
+    margin-left: 1rem;
 }
 #join-now {
     background-color: #26534C;
@@ -231,25 +232,34 @@ nav ul li a {
     margin-bottom: 0.5rem;
 }
 header {
-    background: #26534C;
     color: #fff;
     padding: 10px 0;
     position: relative;
-    display: flex;
-    justify-content: center; 
-    flex-direction: column; 
-    text-align: center; 
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0;
+}
+.header-text {
+    background-color: #26534C;
+    padding: 10px 20px;
+    justify-self: start;
+    grid-row: 1/2;
+    margin: 0;
 }
 header h1 {
-    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 nav {
     margin: 20px 0;
     display: none;
+    justify-self: end;
+    grid-row: 1/2;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    color: #000;
 }
 nav ul li a {
     text-decoration: none;

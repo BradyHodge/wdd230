@@ -8,6 +8,7 @@
     }
     nav {
         display: block;
+        margin: 0;
     }
     nav ul li {
         width: auto;
@@ -48,13 +49,14 @@
         margin-bottom: 20px; 
     }
     nav ul li a {
-    background-color: #8C6E46;
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     text-align: center;
     display: block;
     margin: 20px 0;
     text-decoration: none;
+    margin: 0;
+    border: #000 solid 1px;
     }
     .dark-mode-nav {
         background-color: #26534C;
