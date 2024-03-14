@@ -227,7 +227,7 @@ nav ul li {
     margin: 0;
     display: block;
     text-align: center;
-    width: 100vw; /* Percent was not working for some reason */
+    width: 100vw; 
 }
 nav ul li a {
     display: block;
