@@ -105,7 +105,7 @@
             "lesson": "10",
             "links": [
             {
-                "url":"lesson010/wether.html",
+                "url":"lesson10/wether.html",
                 "title":"Weather API"
             }
             ]
