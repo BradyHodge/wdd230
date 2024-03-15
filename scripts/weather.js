@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.7557&lon=6.6394&appid=97ce948849db0b090867d857dcdb694c&units=imperial';
+const captionDesc = document.querySelector('figcaption'); 
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.826&lon=-111.7897&appid=97ce948849db0b090867d857dcdb694c&units=imperial';
 async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -17,7 +17,7 @@ async function apiFetch() {
   }
   
   function displayResults(data) {
-    const roundedTemp = Math.round(data.main.temp);
+    const roundedTemp = Math.round(data.main.temp); 
   currentTemp.innerHTML = `${roundedTemp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
