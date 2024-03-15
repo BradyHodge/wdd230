@@ -100,6 +100,15 @@
                 "title":"JSON Prophets"
             }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+            {
+                "url":"lesson09/wether.html",
+                "title":"Weather API"
+            }
+            ]
         }
     ]
 }
