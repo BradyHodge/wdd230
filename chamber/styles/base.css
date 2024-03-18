@@ -123,6 +123,17 @@
     margin: 1rem;
     text-align: center;
 }
+#fourzerofour {
+    text-align: center;
+}
+#fourzerofour h1 {
+    font-size: 4rem;
+}
+
+#fourzerofour p {
+    font-size: 2rem;
+}
+
 .dark-mode-nav { 
     color: #ffffff; 
 }
