@@ -135,7 +135,7 @@
 }
 #banner {
     width: 100%;
-    background-color: #af9567;
+    background-color: #26534c;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -143,7 +143,7 @@
     display: none;
 }
 #banner-close-button {
-    background-color: #af9567;
+    background-color: #26534c;
     color: #fff;
     border: none;
     cursor: pointer;
