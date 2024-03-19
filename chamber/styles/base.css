@@ -133,7 +133,23 @@
 #fourzerofour p {
     font-size: 2rem;
 }
-
+#banner {
+    width: 100%;
+    background-color: #af9567;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
+}
+#banner-close-button {
+    background-color: #af9567;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
 .dark-mode-nav { 
     color: #ffffff; 
 }
