@@ -56,7 +56,7 @@
     background: #91B3A6;
 }
 #weather-icon {
-    width: 10%;
+    max-width: 60px;
     float: left;
 }
 #hero h2 {
