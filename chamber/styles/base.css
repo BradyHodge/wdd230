@@ -55,7 +55,7 @@
 #join-now:hover {
     background: #91B3A6;
 }
-#weather-icon img {
+#weather-icon {
     width: 10%;
     float: left;
 }
