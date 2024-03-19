@@ -141,6 +141,7 @@
     text-align: center;
     font-size: 1.5rem;
     display: none;
+    margin-bottom: 1rem;
 }
 #banner-close-button {
     background-color: #26534c;
