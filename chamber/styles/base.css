@@ -152,6 +152,13 @@
     position: absolute;
     right: 0;
 }
+#spotlights div a {
+    display: block;
+    margin-top: 1rem;
+}
+.day-forecast {
+    padding-left: 1rem;
+}
 .dark-mode-nav { 
     color: #ffffff; 
 }
