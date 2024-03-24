@@ -15,9 +15,6 @@ function darkMode() {
     document.querySelectorAll('nav ul li a').forEach(function(element) {
       element.classList.toggle('dark-mode-nav');
   });
-  if (window.location.pathname.endsWith('index.html')) {
-    document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
-}
 toggleLogoColorScheme();
   if (window.location.pathname.endsWith('directory.html')) {
     const listButton = document.getElementById('list-button-img');
@@ -41,9 +38,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('nav ul li a').forEach(function(element) {
           element.classList.toggle('dark-mode-nav');
       });
-      if (window.location.pathname.endsWith('index.html')) {
-        document.getElementById('wind-chill-input').classList.toggle('dark-mode-input');
-    }
         toggleLogoColorScheme();
         if (window.location.pathname.endsWith('directory.html')) {
           const listButton = document.getElementById('list-button-img');
