@@ -46,11 +46,12 @@
 #join-now {
     background-color: #26534C;
     color: #fff;
-    padding: 10px 20px;
+    padding: 14px 20px;
     text-align: center;
     display: block;
     margin: 20px 0;
     text-decoration: none;
+    
 }
 #join-now:hover {
     background: #91B3A6;
@@ -150,6 +151,13 @@
     cursor: pointer;
     position: absolute;
     right: 0;
+}
+#spotlights div a {
+    display: block;
+    margin-top: 1rem;
+}
+.day-forecast {
+    padding-left: 1rem;
 }
 .dark-mode-nav { 
     color: #ffffff; 

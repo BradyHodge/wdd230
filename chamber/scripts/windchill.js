@@ -53,8 +53,9 @@ function calculateWindChill(temperature, windSpeed) {
 
 // Fetches weather data from OpenWeatherMap API
 fetch(
-  `https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=97ce948849db0b090867d857dcdb694c&cnt=3&units=imperial`
+  `https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=42.873&appid=97ce948849db0b090867d857dcdb694c&cnt=3&units=imperial`
 )
+
   // Parse the response as JSON
   .then((response) => response.json())
   .then((data) => {
