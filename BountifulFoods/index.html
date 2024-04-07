@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <meta name="description" content="Final website for WDD 230 at BYU-Idaho">
+    <meta name="author" content="Brady Hodge">
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:description" content="For all of your fruit needs">
+    <!-- <meta property="og:image" content="./images/favicon.ico"> -->
+    <meta property="og:url" content="https://bradyhodge.github.io/wdd230/bountifulfoods/">
+    <meta property="og:type" content="website">
+    <!-- <link rel="icon" href="./images/favicon.ico" type="image/x-icon"> -->
+    <script defer src="./scripts/navHide.js"></script>
+    <script defer src="./scripts/lastMod.js"></script>
+    <script defer src="./scripts/getWether.js"></script>
 </head>
+
 <body>
+    <header>
+    <nav>
+            <a href="index.html" class="logo">Bountiful Foods</a>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Drink</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button type="button" id="hide-navbar">
+                <span class="toggle-icon">text</span>
+            </button>
+    </nav>
+
+
     
+        <div id="hero-text">
+            <h1>Welcome to Bountiful Foods</h1>
+            <p>Fresh Fruit Every Day</p>
+        </div>
+    </header>
+
+    <div>
+        <section class="main-cards">
+                <div class="card" id="ca-info">
+                    <h2>California</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium quam vulputate. Massa placerat duis ultricies lacus sed turpis tincidunt. In ornare quam viverra orci sagittis eu volutpat odio. Purus sit amet volutpat consequat mauris nunc. Etiam non quam lacus suspendisse faucibus. Duis at tellus at urna condimentum mattis pellentesque id nibh. Id consectetur purus ut faucibus. Mauris nunc congue nisi vitae suscipit tellus. Ultricies tristique nulla aliquet enim tortor at. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Auctor urna nunc id cursus metus aliquam eleifend. A pellentesque sit amet porttitor. Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Ultricies integer quis auctor elit sed.</p>
+                    
+                </div>
+
+                <div class="card" id="order">
+                    <h3>Specialty Drinks Ordered</h3>
+                    <p id="drinks-ordered">0</p>
+                    <button class="order-button" onclick="window.location.href = './order.html'">Order Now</button>
+                </div>
+
+                <div class="card" id="wether">
+                    <h2>Live Weather</h2>
+                    <p id="wether2"><span> <img id="weather-icon" alt="Icon to show the weather description"> </span> <span id="current-temp">Loading...</span></p>
+                    <p><span id="weather-description">Loading...</span></p>
+                    <br> 
+                    <p>Wind Speed: <span id="wind-speed">Loading...</span></p>
+                    <p>Wind Chill: <span id="wind-chill">Loading...</span></p>
+                </div>  
+                <div class="three-day-forcast card">
+                
+                    <h3>3 Day Forecast</h3>
+                    <div class="forecast">
+                        <h4 id="day1">Loading...</h4>
+                        <p><span id="day1-icon"></span> <span id="day1-temp">Loading...</span></p>
+                    </div>
+                    <div class="forecast">
+                        <h4 id="day2">Loading...</h4>
+                        <p><span id="day2-icon"></span> <span id="day2-temp">Loading...</span></p>
+                    </div>
+                    <div class="forecast">
+                        <h4 id="day3">Loading...</h4>
+                        <p><span id="day3-icon"></span> <span id="day3-temp">Loading...</span></p>
+                    </div>    
+                </div>
+        </section>
+    </div>
+    <footer>
+                <div id="resources">
+                    <p>Resources Used:</p>
+                    <ul>
+                        <li><a href="https://openweathermap.org">OpenWeatherMap</a></li>
+                        <li><a href="https://www.fruityvice.com">Fruityvice</a></li>
+                        <li><a href="https://unsplash.com">Unsplash</a></li>
+                    </ul>
+                    
+                </div>
+                <div id="social-media">
+                    <p>Our Social Media:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div id="contact-info">
+                    <p>Contact us:</p>
+                    <ul>
+                        <li><a href="mailto:#">bountifulfoods@fresh.com</a></li>
+                        <li><a href="tel:">760-555-5555</a></li>
+                        <li>421 Main Street, Carlsbad, CA</li>
+                    </ul>
+                </div>
+                <div id="copy">
+                    © 2024 Brady Hodge | Project for WDD 230 | <span id="last-modified"></span>
+                </div>
+    </footer>
+
+
+
 </body>
 </html>

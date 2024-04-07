@@ -1,0 +1,134 @@
+:root {
+    --primary: #8ecae6;
+    --secondary: #219ebc;
+    --accent: #023047;
+    --background: #f9f7f8;
+    --text: #0f0c0c;
+}
+#nav-links {
+    display: none;
+    list-style: none;
+    z-index: 1;
+}
+#hero-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#hero-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#social-media ul, #resources ul, #contact-info ul {
+    margin: 0;
+    padding: 0;
+}
+#social-media ul li, #resources ul li, #contact-info ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+#copy {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    grid-column: 1/4;
+}
+.logo {
+    color: var(--background);
+    text-decoration: none;
+}
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+.card {
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    z-index: -2;
+    color: var(--background);
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    background-image: url('../images/overlay.png');
+    background-repeat: repeat;
+    /* opacity: 0.5;  */
+    z-index: -1;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 2rem 10%;
+    text-align: center;
+    border-bottom: var(--background) 1px solid;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--background);
+}
+footer {
+    background-color: var(--accent);
+    color: var(--background);
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+}
+footer a {
+    /* text-decoration: none; */
+    color: var(--background);
+}
+
+
+
