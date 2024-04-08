@@ -8,7 +8,6 @@
 #nav-links {
     display: none;
     list-style: none;
-    z-index: 1;
 }
 #hero-text {
     margin: 0;
@@ -19,12 +18,17 @@
     align-items: center;
     height: 50vh;
 }
+#hero-text h1 {
+    z-index: 3;
+    margin-bottom: 1rem;
+}
 #hero-text p {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
     padding: 0;
     text-align: center;
+    z-index: 3;
 }
 #social-media ul, #resources ul, #contact-info ul {
     margin: 0;
@@ -41,6 +45,14 @@
     margin: 0;
     grid-column: 1/4;
 }
+#form-submit {
+    border: none;
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .logo {
     color: var(--background);
     text-decoration: none;
@@ -52,12 +64,27 @@
     padding: 1rem;
     margin: 0;
 }
-.card {
+.card {  
     background-color: var(--background);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     margin: 0;
+}
+.order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.order-form input{
+    display: block;
+    text-align: left;
+    background-color: var(--background);
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    margin: 0.5rem 0;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -74,7 +101,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100%;
-    z-index: -2;
+    z-index: 1;
     color: var(--background);
 }
 header::before {
@@ -88,7 +115,7 @@ header::before {
     background-image: url('../images/overlay.png');
     background-repeat: repeat;
     /* opacity: 0.5;  */
-    z-index: -1;
+    z-index: 2;
 }
 h1 {
     font-size: 2.5rem;
@@ -100,10 +127,12 @@ h1 {
 
 }
 nav {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    z-index: 3;
 }
 nav ul li {
     margin-right: 1rem;

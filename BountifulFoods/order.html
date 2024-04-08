@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Now</title>
+        <link rel="stylesheet" href="./styles/small.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/large.css">
+        <meta name="description" content="Final website for WDD 230 at BYU-Idaho">
+        <meta name="author" content="Brady Hodge">
+        <meta property="og:title" content="Bountiful Foods">
+        <meta property="og:description" content="For all of your fruit needs">
+        <meta property="og:url" content="https://bradyhodge.github.io/wdd230/bountifulfoods/">
+        <meta property="og:type" content="website">
+
+        <script defer src="./scripts/navHide.js"></script>
+    <script defer src="./scripts/lastMod.js"></script>
+    <script defer src="./scripts/fruits.js"></script>
+    <script defer src="./scripts/formDate.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+                <a href="index.html" class="logo">Bountiful Foods</a>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <button type="button" id="hide-navbar">
+                    <span class="toggle-icon"></span>
+                </button>
+        </nav>
+    
+    
+        
+            <div id="hero-text">
+                <h1>Order Now</h1>
+            </div>
+        </header>
+
+<body>
+    <form action="confirm.html" method="get" class="order-form card">
+        <input type="hidden" id="submitDate" name="submitDate">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="fruit1">Fruit 1</label>
+        <select id="fruit1" name="fruit1" class="fruit-dropdown" required>
+        </select>
+        <label for="fruit2">Fruit 2</label>
+        <select id="fruit2" name="fruit2" class="fruit-dropdown" required>
+        </select>
+        <label for="fruit3">Fruit 3</label>
+        <select id="fruit3" name="fruit3" class="fruit-dropdown" required>
+        </select>
+        <label for="special-instructions">Special Instructions:</label><br>
+        <textarea id="special-instructions" name="special-instructions"></textarea>
+        <input type="submit" value="Submit Order" id="form-submit">
+    </form>
+</body>
+
+
+
+<footer>
+                
+                
+    <div id="social-media">
+        <p>Our Social Media:</p>
+        <ul>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+    </div>
+    <div id="resources">
+        <p>Resources Used:</p>
+        <ul>
+            <li><a href="https://openweathermap.org">OpenWeatherMap</a></li>
+            <li><a href="https://www.fruityvice.com">Fruityvice</a></li>
+            <li><a href="https://unsplash.com">Unsplash</a></li>
+        </ul>
+    </div>
+    <div id="contact-info">
+        <p>Contact us:</p>
+        <ul>
+            <li><a href="mailto:#">hello@bountifulfoods.com</a></li>
+            <li><a href="tel:">555-555-5555</a></li>
+            <li>421 Main Street, Carlsbad, CA</li>
+        </ul>
+    </div>
+    <div id="copy">
+        © 2024 Brady Hodge | Project for WDD 230 | <span id="last-modified"></span>
+    </div>
+</footer>
+</body>
+</html>

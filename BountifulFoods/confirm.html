@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation</title>
+        <link rel="stylesheet" href="./styles/small.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/large.css">
+        <meta name="description" content="Final website for WDD 230 at BYU-Idaho">
+        <meta name="author" content="Brady Hodge">
+        <meta property="og:title" content="Bountiful Foods">
+        <meta property="og:description" content="For all of your fruit needs">
+        <meta property="og:url" content="https://bradyhodge.github.io/wdd230/bountifulfoods/">
+        <meta property="og:type" content="website">
+        <script defer src="./scripts/navHide.js"></script>
+        <script defer src="./scripts/lastMod.js"></script>
+        <script defer src="./scripts/order.js"></script>
+        <script defer src="./scripts/totalCal.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+                <a href="index.html" class="logo">Bountiful Foods</a>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <button type="button" id="hide-navbar">
+                    <span class="toggle-icon"></span>
+                </button>
+        </nav>
+    
+    
+        
+            <div id="hero-text">
+                <h1>Order Confirmation</h1>
+            </div>
+        </header>
+
+<main>
+
+    <section class="order-details">
+            <h2>Thank You</h2>
+        
+        <section class="thank-you">
+            <h4>Your order has been submitted</h4>
+            <p>Submission Date: <span id="submission-date"></span></p>
+        </section>
+
+        
+        <section class="card" id="pick-up">
+            <p>Orders are ready within 1 hour. Please come pick up your order at 421 Main Street, Carlsbad, CA.</p>
+            <p>If you have any questions call us at (555)-555-5555.</p>
+            <p>Please rate us on Yelp!</p>
+        </section>
+        
+        <section class="personal-info" id="order">
+            <h3>Your information</h3>
+            <h4>Name: <span id="yourname"></span></h4>
+            <h4>Email: <span id="youremail"></span></h4>
+            <h4>Phone: <span id="yourphone"></span></h4>
+        </section>
+        <br>
+        <section class="n-facts" id="order">
+            <h3>Nutritional Facts</h3>
+            <h4>Total Calories:  <span id="total-calories"></span></h4>
+            <h4>Total Fat:  <span id="total-fat"></span></h4>
+            <h4>Total Sugar:  <span id="total-sugar"></span></h4>
+            <h4>Total Carbohydrates:  <span id="total-carbohydrates"></span></h4>
+            <h4>Total Protein:  <span id="total-protein"></span></h4>
+        </section>
+        <br>
+    </section>
+        
+    <section class="order-summary">
+        <section class="card" id="order-info">
+            <h3>Your order summary</h3>
+            <h4>Fruit 1: <span id="yourfruit1"></span></h4>
+            <h4>Fruit 2: <span id="yourfruit2"></span></h4>
+            <h4>Fruit 3: <span id="yourfruit3"></span></h4>
+            <h4>Special Instructions: <span id="yourspecialinstructions"></span></h4>
+        </section>
+    </section>
+</main>
+<footer>
+                
+                
+    <div id="social-media">
+        <p>Our Social Media:</p>
+        <ul>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+    </div>
+    <div id="resources">
+        <p>Resources Used:</p>
+        <ul>
+            <li><a href="https://openweathermap.org">OpenWeatherMap</a></li>
+            <li><a href="https://www.fruityvice.com">Fruityvice</a></li>
+            <li><a href="https://unsplash.com">Unsplash</a></li>
+        </ul>
+    </div>
+    <div id="contact-info">
+        <p>Contact us:</p>
+        <ul>
+            <li><a href="mailto:#">hello@bountifulfoods.com</a></li>
+            <li><a href="tel:">555-555-5555</a></li>
+            <li>421 Main Street, Carlsbad, CA</li>
+        </ul>
+    </div>
+    <div id="copy">
+        © 2024 Brady Hodge | Project for WDD 230 | <span id="last-modified"></span>
+    </div>
+</footer>
+
+
+</body>
+</html>
