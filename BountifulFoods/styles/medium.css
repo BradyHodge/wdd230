@@ -8,4 +8,9 @@
     align-items: center;
     padding: 1rem 2rem;
 }
+
+.gallery .map {
+    grid-column: 1 / span 2;
+
+}
 }
