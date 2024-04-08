@@ -1,30 +1,17 @@
-fetch('./data/fruits.json')
-  .then(response => response.json())
-  .then(data => {
-    const totals = data.reduce(
-      (acc, fruit) => {
-        if (['fruit1', 'fruit2', 'fruit3'].includes(fruit.name)) {
-          acc.calories += fruit.nutritions.calories || 0;
-          acc.fat += fruit.nutritions.fat || 0;
-          acc.sugar += fruit.nutritions.sugar || 0;
-          acc.carbohydrates += fruit.nutritions.carbohydrates || 0;
-          acc.protein += fruit.nutritions.protein || 0;
-        }
-        return acc;
-      },
-      { calories: 0, fat: 0, sugar: 0, carbohydrates: 0, protein: 0 }
-    );
-
-    updateDOMAsync(totals);
-  })
-  .catch(error => console.error('Error loading fruits.json:', error));
-
-function updateDOMAsync(totals) {
-  requestAnimationFrame(() => {
-    document.getElementById('total-calories').textContent = formatNumber(totals.calories);
-    document.getElementById('total-fat').textContent = formatNumber(totals.fat);
-    document.getElementById('total-sugar').textContent = formatNumber(totals.sugar);
-    document.getElementById('total-carbohydrates').textContent = formatNumber(totals.carbohydrates);
-    document.getElementById('total-protein').textContent = formatNumber(totals.protein);
-  });
-}
+const urlParams = new URLSearchParams(window.location.search);
+const firstName = urlParams.get("first_name");
+const email = urlParams.get("email");
+const phone = urlParams.get("phone");
+const fruit1 = urlParams.get("fruit1");
+const fruit2 = urlParams.get("fruit2");
+const fruit3 = urlParams.get("fruit3");
+const specialInstructions = urlParams.get("special_instructions");
+const submissionDate = urlParams.get("submitDate");
+document.getElementById("yourname").textContent = firstName;
+document.getElementById("youremail").textContent = email;
+document.getElementById("yourphone").textContent = phone;
+document.getElementById("yourfruit1").textContent = fruit1;
+document.getElementById("yourfruit2").textContent = fruit2;
+document.getElementById("yourfruit3").textContent = fruit3;
+document.getElementById("yourspecialinstructions").textContent = specialInstructions;
+document.getElementById("submission-date").textContent = submissionDate;

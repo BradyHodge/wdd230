@@ -106,6 +106,10 @@
     object-fit: cover;
     border-radius: 10px;
 }
+.about {
+    padding: 1rem;
+    
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
