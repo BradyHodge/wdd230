@@ -6,11 +6,12 @@
     --text: #0f0c0c;
 }
 
-#nav-links {
-    display: none;
+nav ul {
+    /* display: none; */
     list-style: none;
 }
 #hero-text {
+    position: relative;
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,6 +19,7 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
+    z-index: 2;
 }
 #hero-text h1 {
     z-index: 3;
@@ -44,7 +46,6 @@
     text-align: center;
     padding: 1rem;
     margin: 0;
-    grid-column: 1/4;
 }
 #form-submit {
     border: none;
@@ -160,11 +161,11 @@ nav {
     z-index: 3;
 }
 nav ul li {
-    margin-right: 1rem;
+    margin: 1rem;
 }
 nav ul li a {
     text-decoration: none;
-    color: var(--background);
+    color: var(--text);
 }
 footer {
     background-color: var(--accent);
@@ -174,15 +175,50 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+
 }
 footer p {
     margin: 0;
     padding: 0;
 }
 footer a {
-    /* text-decoration: none; */
     color: var(--background);
 }
 
+#slide-out-panel {
+    position: fixed;
+    top: 0;
+    right: -40%;
+    width: 40%;
+    height: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 4;
+  }
+  #hide-navbar {
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    color: var(--text);
+    background-color: var(--background);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+  }
+  #slide-out-panel.active {
+    right: 0;
+    background-color: var(--background);
+    color: var(--text);
+  }
 
-
+  #nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }

@@ -1,16 +1,39 @@
 @media screen and (min-width: 852px) {
-#hide-navbar {
-    display: none;
-}
-#nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
+    #slide-out-panel {
+        position: static;
+        right: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        transition: none;
+        z-index: auto;
+    }
+    #slide-out-panel.show {
+        right: auto;
+    }
+    #hide-navbar {
+        display: none;
+    }
+    #nav-links {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        flex-direction: row;
+    }
+    #copy {
+    grid-column: 1 / span 3;
 
-.gallery .map {
-    grid-column: 1 / span 2;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: var(--background);
+    }
 
-}
+    .gallery .map {
+        grid-column: 1 / span 2;
+        
+    }
+    nav ul li {
+        margin-right: 1rem;
+    }
 }

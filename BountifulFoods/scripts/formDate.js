@@ -1,7 +1,16 @@
-function getDate() {
-    const today = new Date();
-    return `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-    }
-    document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('submitDate').value = getDate();
-    });
+function getTodayDate() {
+    return new Date().toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' });
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submitDate').value = getTodayDate();
+  });
+  
+  function incrementAndStoreCounter() {
+    let counter = parseInt(localStorage.getItem('drinksOrdered')) || 0;
+    counter++;
+    localStorage.setItem('drinksOrdered', counter);
+    return counter;
+  }
+  
+  document.getElementById("form-submit").addEventListener("click", incrementAndStoreCounter);
