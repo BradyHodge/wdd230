@@ -17,7 +17,6 @@
     }
     #nav-links {
         justify-content: space-between;
-        padding: 1rem 2rem;
         flex-direction: row;
     }
     #copy {
