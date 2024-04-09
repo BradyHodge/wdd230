@@ -99,6 +99,10 @@ nav ul {
   #confirmation {
     margin: 2rem;
   }
+  #weather-icon {
+    max-width: 100px;
+    max-height: 100px;
+  }
   .hr {
     border: none;
     border-bottom: 1px solid var(--accent);
