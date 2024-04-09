@@ -103,6 +103,7 @@ nav ul {
     max-width: 100px;
     max-height: 100px;
   }
+  
   .hr {
     border: none;
     border-bottom: 1px solid var(--accent);
@@ -234,6 +235,7 @@ h1 {
     margin: 2rem 10%;
     text-align: center;
     border-bottom: var(--background) 1px solid;
+    font-family: "Changa One", sans-serif;
 
 }
 nav {
